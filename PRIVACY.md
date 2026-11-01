@@ -67,6 +67,18 @@ Windows 11 PC:
 - **Older phones.** Android's compatibility checker found four crashes that would have hit
   Android 10 and 11. All were **fixed** before release.
 
+### Checked again for v2.1
+
+Themes add one small message between your devices: the chosen look (theme, accent, home style
+and when it was picked). Nothing else is shared, and nothing leaves your two devices.
+
+- **Broken or unknown theme messages are ignored**, including made-up colours or values; an
+  older Drift ignores the whole message.
+- **A wrong clock can't take over.** A device whose clock ran a year ahead could keep undoing
+  the other's choice. This was found during testing and **fixed**.
+- **Stress tested** on a real phone: 31 changes in a quarter of a second ended in sync, with no
+  crash and no extra battery use at rest.
+
 ## Questions or a security problem?
 
 Message [@byte.sizedesign](https://www.instagram.com/byte.sizedesign/) on Instagram, or open an

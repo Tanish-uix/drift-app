@@ -11,8 +11,9 @@
 </p>
 
 <p align="center">
-  <a href="../../releases/latest"><b>⬇ Download Drift 2.0</b></a> ·
+  <a href="../../releases/latest"><b>⬇ Download Drift 2.1</b></a> ·
   <a href="#features">Features</a> ·
+  <a href="#whats-new-in-21">What's new</a> ·
   <a href="PRIVACY.md">Privacy</a> ·
   <a href="https://www.instagram.com/byte.sizedesign/">Made by @byte.sizedesign</a>
 </p>
@@ -25,12 +26,39 @@
 
 ---
 
+## What's new in 2.1
+
+**Make it yours.** Settings → **Look** on either device, and the other follows within a second.
+
+- **Light, Dark or Match system.** Dark mode softens the pastel folders so nothing glares at night.
+- **Accent colour:** Ink, Ocean, Forest, Grape, Coral or Rose, or your wallpaper's colours on Android 12+.
+  It colours buttons, switches, selections and the folder icons.
+- **Home style:** *Folders*, with papers peeking out, or *Tiles*, big colour tiles like app icons.
+
+<p align="center">
+  <img src="screenshots/pc-home-dark.png" width="68%" alt="Drift on Windows in Dark mode, Folders">
+  &nbsp;
+  <img src="screenshots/phone-home-dark.png" width="22%" alt="Drift on Android in Dark mode, Folders">
+</p>
+<p align="center">
+  <img src="screenshots/pc-tiles.png" width="68%" alt="Drift on Windows in Dark mode, Tiles with the Ocean accent">
+  &nbsp;
+  <img src="screenshots/phone-tiles.png" width="22%" alt="Drift on Android in Dark mode, Tiles with the Ocean accent">
+</p>
+<p align="center">
+  <img src="screenshots/pc-look.png" width="60%" alt="The Look settings: Theme, Home style and Accent colour">
+</p>
+
+Updating from 2.0? Install the new files over the old ones. Your pairing and settings stay.
+
+---
+
 ## Download
 
 | | File | Needs |
 |---|---|---|
-| **Phone** | `Drift-2.0.0.apk` | Android 10 or newer |
-| **PC** | `Drift_2.0.0_x64-setup.exe` | Windows 10 (1809+) or Windows 11, 64-bit |
+| **Phone** | `Drift-2.1.0.apk` | Android 10 or newer |
+| **PC** | `Drift_2.1.0_x64-setup.exe` | Windows 10 (1809+) or Windows 11, 64-bit |
 
 Get both from the **[latest release](../../releases/latest)**. Both are free.
 
@@ -50,7 +78,7 @@ then click **Allow** on the PC. That's it: from now on they find each other by t
 Each release lists SHA-256 checksums in `SHA256SUMS.txt`. In PowerShell on your PC:
 
 ```powershell
-Get-FileHash .\Drift_2.0.0_x64-setup.exe -Algorithm SHA256
+Get-FileHash .\Drift_2.1.0_x64-setup.exe -Algorithm SHA256
 ```
 
 The result should match the line in `SHA256SUMS.txt`.

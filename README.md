@@ -49,6 +49,9 @@
   <img src="screenshots/pc-look.png" width="60%" alt="The Look settings: Theme, Home style and Accent colour">
 </p>
 
+**2.1.1:** the phone now finds your PC again after it gets a new network address, even on routers that
+hide devices from each other. If Drift connected once and then stopped, update both apps.
+
 Updating from 2.0? Install the new files over the old ones. Your pairing and settings stay.
 
 ---
@@ -57,8 +60,8 @@ Updating from 2.0? Install the new files over the old ones. Your pairing and set
 
 | | File | Needs |
 |---|---|---|
-| **Phone** | `Drift-2.1.0.apk` | Android 10 or newer |
-| **PC** | `Drift_2.1.0_x64-setup.exe` | Windows 10 (1809+) or Windows 11, 64-bit |
+| **Phone** | `Drift-2.1.1.apk` | Android 10 or newer |
+| **PC** | `Drift_2.1.1_x64-setup.exe` | Windows 10 (1809+) or Windows 11, 64-bit |
 
 Get both from the **[latest release](../../releases/latest)**. Both are free.
 
@@ -78,7 +81,7 @@ then click **Allow** on the PC. That's it: from now on they find each other by t
 Each release lists SHA-256 checksums in `SHA256SUMS.txt`. In PowerShell on your PC:
 
 ```powershell
-Get-FileHash .\Drift_2.1.0_x64-setup.exe -Algorithm SHA256
+Get-FileHash .\Drift_2.1.1_x64-setup.exe -Algorithm SHA256
 ```
 
 The result should match the line in `SHA256SUMS.txt`.
@@ -138,6 +141,7 @@ The result should match the line in `SHA256SUMS.txt`.
 ### Works anywhere
 
 - **At home** over Wi-Fi, with Bluetooth as a backup for clipboard, calls and notifications.
+- **Finds your PC again** after your router gives it a new address, even on routers that hide devices from each other.
 - **Away from home** over mobile data with [Tailscale](https://tailscale.com) on both devices (free for personal use).
 
 ---

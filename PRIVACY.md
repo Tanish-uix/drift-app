@@ -41,6 +41,9 @@ Drift does **not** read your contacts, call log, SMS, location, accounts or adve
   Wi-Fi gets "not paired".
 - The PC announces itself on your home network (its name and Drift's port) so your phone can find
   it. That's the only thing others on your Wi-Fi can see.
+- If the phone can't find your PC that way (some routers block it), it briefly checks the devices on
+  its own Wi-Fi for Drift's port. It opens and closes a connection, sends nothing, and only connects
+  to the PC whose security certificate matches your pairing. It never looks beyond your Wi-Fi.
 - Away from home, Drift works through Tailscale, a private network between your own devices.
   Drift doesn't add any other servers.
 
@@ -78,6 +81,13 @@ and when it was picked). Nothing else is shared, and nothing leaves your two dev
   the other's choice. This was found during testing and **fixed**.
 - **Stress tested** on a real phone: 31 changes in a quarter of a second ended in sync, with no
   crash and no extra battery use at rest.
+
+### Checked again for v2.1.1
+
+- **Finding a moved PC stays private.** The phone's Wi-Fi check only runs after your PC can't be
+  reached at its known addresses, stays inside your own Wi-Fi, sends no data, and slows down to once
+  every 10 minutes while your PC is off. It connects only to the PC whose certificate matches your
+  pairing.
 
 ## Questions or a security problem?
 
